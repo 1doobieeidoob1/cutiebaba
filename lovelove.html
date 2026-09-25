@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Love Message 💗</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: "Courier New", monospace;
+
+            background-image:
+                linear-gradient(
+                    rgba(255, 150, 190, 0.35),
+                    rgba(255, 150, 190, 0.35)
+                ),
+                url("background.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+        }
+
+        .window {
+            width: 90%;
+            max-width: 700px;
+            height: 85vh;
+
+            background: rgba(255, 255, 255, 0.90);
+
+            border: 3px solid #ff8fba;
+            border-radius: 20px;
+
+            box-shadow: 0 10px 35px rgba(255, 70, 130, 0.4);
+
+            overflow: hidden;
+        }
+
+        .titlebar {
+            height: 50px;
+            background: #ff91b8;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 20px;
+
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .hearts {
+            margin-left: auto;
+            font-size: 20px;
+        }
+
+        .message-container {
+            height: calc(100% - 105px);
+            overflow: hidden;
+            padding: 30px;
+            position: relative;
+        }
+
+        .message {
+            text-align: center;
+            color: #c94678;
+            font-size: 18px;
+            line-height: 1.8;
+
+            animation: scrollMessage 120s linear infinite;
+        }
+
+        /* PERFECT CIRCLE PHOTO */
+        .love-picture {
+            width: min(350px, 80vw);
+            height: min(350px, 80vw);
+
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            object-position: center;
+
+            border-radius: 50%;
+
+            border: 5px solid #ff91b8;
+
+            box-shadow:
+                0 5px 20px rgba(255, 70, 130, 0.4);
+
+            margin: 0 auto 25px auto;
+
+            display: block;
+
+            flex-shrink: 0;
+        }
+
+        .message h1 {
+            color: #ff4f91;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .message p {
+            margin-bottom: 30px;
+        }
+
+        .heart {
+            font-size: 45px;
+            margin: 20px;
+        }
+
+        @keyframes scrollMessage {
+
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+
+        }
+
+        .signature {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4f91;
+            margin-top: 40px;
+        }
+
+        .controls {
+            height: 55px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: rgba(255, 230, 240, 0.95);
+
+            border-top: 2px solid #ffb4cd;
+        }
+
+        #pauseBtn {
+            background: #ff6fa5;
+            color: white;
+
+            border: none;
+            border-radius: 20px;
+
+            padding: 9px 25px;
+
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+        #pauseBtn:hover {
+            background: #ff4f91;
+            transform: scale(1.05);
+        }
+
+        #pauseBtn:active {
+            transform: scale(0.95);
+        }
+
+        /* PHONE SCREEN */
+        @media (max-width: 600px) {
+
+            .window {
+                width: 95%;
+                height: 90vh;
+            }
+
+            .message-container {
+                padding: 20px;
+            }
+
+            .message {
+                font-size: 16px;
+            }
+
+            .message h1 {
+                font-size: 26px;
+            }
+
+            .love-picture {
+                width: min(280px, 75vw);
+                height: min(280px, 75vw);
+            }
+
+            .titlebar {
+                font-size: 15px;
+            }
+
+            .heart {
+                font-size: 35px;
+            }
+
+            .signature {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="window">
+
+        <!-- TITLE BAR -->
+        <div class="titlebar">
+
+            💗 My Love Message
+
+            <div class="hearts">
+                ♡ ♥ ♡
+            </div>
+
+        </div>
+
+
+        <!-- MESSAGE -->
+        <div class="message-container">
+
+            <div class="message" id="message">
+
+                <!-- PHOTO -->
+                <img
+                    src="lovey.jpg  "
+                    alt="Our Picture"
+                    class="love-picture"
+                >
+
+
+                <div class="heart">
+                    💗
+                </div>
+
+
+                <h1>
+                    Dear Bea,
+                </h1>
+
+
+                <p>
+                    I just want to say how thankful and grateful I am
+                    to have you in my life. I'm really lucky to have
+                    someone like you by my side.
+                </p>
+
+
+                <p>
+                    We've been through a lot together struggles, problems,
+                    and misunderstandings. But even through all of those
+                    things, I still love you so much. Those moments made
+                    me realize how important you are to me.
+                </p>
+
+
+                <p>
+                    Thank you for helping me become a better person and
+                    the man I want to be. You inspire me to improve myself
+                    and to become the best version of myself, especially
+                    for you.
+                </p>
+
+
+                <p>
+                    I also want to say
+                    <strong>congratulations</strong> to you!
+
+                    I saw how hard you worked for your quizzes and exams.
+
+                    I know you spent a lot of time reviewing and studying,
+                    and I'm really proud of you.
+
+                    I see all your effort, not only in your academics
+                    but also in everything you do.
+                </p>
+
+
+                <p>
+                    Please don't forget that I'm always proud of you,
+                    no matter what the result is.
+
+                    You did your best,
+                    and that's something worth being proud of.
+                </p>
+
+
+                <p>
+                    Thank you for everything, Bea.
+
+                    Thank you for being part of my life
+                    and for always inspiring me.
+                </p>
+
+
+                <div class="heart">
+                    ❤️
+                </div>
+
+
+                <p>
+
+                    <strong>
+                        I love you so much, and I'm really grateful
+                        to have you.
+                    </strong>
+
+                    ❤️
+
+                </p>
+
+
+                <div class="signature">
+                    BABA &lt;3
+                </div>
+
+
+                <div class="heart">
+                    ♡ ♥ ♡
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAUSE BUTTON -->
+        <div class="controls">
+
+            <button id="pauseBtn">
+                ⏸ Pause
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const message =
+            document.getElementById("message");
+
+        const pauseBtn =
+            document.getElementById("pauseBtn");
+
+        let paused = false;
+
+
+        pauseBtn.addEventListener("click", function () {
+
+            if (paused) {
+
+                message.style.animationPlayState = "running";
+
+                pauseBtn.innerHTML = "⏸ Pause";
+
+                paused = false;
+
+            } else {
+
+                message.style.animationPlayState = "paused";
+
+                pauseBtn.innerHTML = "▶ Play";
+
+                paused = true;
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
